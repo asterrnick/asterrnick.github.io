@@ -7,33 +7,45 @@
     <style>
         body {
             font-family: sans-serif;
-            text-align: center; /* Centers content horizontally */
+            display: flex;
+            flex-direction: column; /* Align items vertically */
+            align-items: center; /* Center horizontally */
+            justify-content: center; /* Center vertically */
+            min-height: 100vh; /* Ensure the body fills the screen */
+            margin: 0; /* Remove default margin */
         }
         .social-links {
-            margin-top: 20px;
+            list-style-type: disc; /* Use bullet points */
+            padding: 0; 
+        }
+        .social-links li {
+            margin-bottom: 10px; /* Add space between list items */
+            text-align: center; 
         }
         .social-links a {
-            margin: 0 10px; /* Adds space between icons */
-            text-decoration: none; /* Removes underlines from links */
+            text-decoration: none;
         }
-        /* Add more styles here as needed */
     </style>
 </head>
 <body>
 
     <h1>asterrnick</h1>
 
-    <div class="social-links">
-        <a href="https://www.youtube.com/channel/UCcypdD7UK02DNw2ygucXHwg" target="_blank">
-            <img src="path/to/youtube-logo.png" alt="YouTube"> 
-        </a>
-        <a href="https://x.com/asterrnick/" target="_blank">
-            <img src="path/to/twitter-logo.png" alt="Twitter/X">
-        </a>
-        <a href="nicknaming" target="_blank"> 
-            <img src="path/to/discord-logo.png" alt="Discord">
-        </a>
-    </div>
+    <ul class="social-links">
+        <li>
+            <a href="https://www.youtube.com/channel/UCcypdD7UK02DNw2ygucXHwg" target="_blank">
+                <img src="path/to/youtube-logo.png" alt="YouTube"> YouTube
+            </a>
+        </li>
+        <li>
+            <a href="https://x.com/asterrnick/" target="_blank">
+                <img src="path/to/twitter-logo.png" alt="Twitter/X"> Twitter/X
+            </a>
+        </li>
+        <li>
+            <img src="path/to/discord-logo.png" alt="Discord"> nicknaming
+        </li>
+    </ul>
 
 </body>
 </html>
